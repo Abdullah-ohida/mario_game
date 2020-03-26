@@ -1,0 +1,210 @@
+body,
+ul,
+li,
+a,
+h2,
+h3 {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: red;
+    padding: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    border: 5px solid white;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 25px;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    max-width: 100%;
+    min-height: 50vh;
+}
+
+.banner .welcome {
+    position: absolute;
+    left: 0px;
+    background-color: green;
+    color: white;
+    top: 40%;
+    padding: 10px;
+}
+
+.banner h2 {
+    font-size: 30px;
+}
+
+.banner h2 span {
+    font-size: 1.5em;
+}
+
+nav {
+    background-color: whitesmoke;
+    padding: 20px;
+    position: sticky;
+    top: 100px;
+}
+
+nav ul {
+    white-space: nowrap;
+    max-width: 1200px;
+    text-align: center;
+}
+
+nav li {
+    width: 20%;
+    display: inline-block;
+    font-size: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(87, 84, 84);
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+nav .join {
+    color: red;
+}
+
+main {
+    max-width: 100%;
+    width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+article {
+    margin: 50px auto;
+}
+
+article h2 {
+    font-size: 45px;
+    color: red;
+}
+
+article p {
+    font-size: 18px;
+    line-height: 2em;
+}
+
+article p::first-letter {
+    font-size: 40px;
+    color: red;
+}
+
+.img {
+    text-align: center;
+    margin: 80px 0;
+}
+
+main ul {
+    display: flex;
+    align-items: center;
+    padding: 0 3em 0 2em;
+}
+
+.img li {
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+}
+
+.img li img {
+    max-width: 100%;
+}
+
+section.join {
+    background-color: rgb(245, 240, 240);
+    text-align: center;
+    padding: 20px;
+    color: silver;
+}
+
+.join h2 {
+    font-size: 35px;
+}
+
+form input {
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 4px white solid;
+}
+
+button {
+    background: white;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    color: red;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 4px;
+}
+
+button:hover {
+    color: rgb(92, 10, 10);
+    background-color: white;
+}
+
+footer {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.img li:hover {
+    position: relative;
+    top: -4px
+}
+
+form input:hover {
+    position: relative;
+    top: -4px;
+}
+
+form input:focus {
+    border: 2px dashed gray;
+    outline: none;
+}
+
+form input:valid {
+    border: 2px solid green;
+}
+
+p::after {
+    content: '...';
+}
+
+@media screen and (max-width: 100px) {
+    .banner h2 {
+        font-size: 20px;
+    }
+}
